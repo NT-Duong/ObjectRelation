@@ -1,0 +1,60 @@
+    public static void main(String[] args) 
+    {
+
+        // create Tree
+        HeapSort Tree = new HeapSort();
+        // start tree array
+        Tree.Create("HeapSort");
+        // add to Box
+        Add(Tree, 9);
+        Add(Tree, 4);
+        Add(Tree, 6);
+        Add(Tree, 10);
+        Add(Tree, 2);
+        Add(Tree, 7);
+        Add(Tree, 12);
+        Add(Tree, 15);
+        Add(Tree, 3);
+        Add(Tree, 8);
+
+        //print tree
+        System.out.println("In-Place Tree Before Sorting");
+        printTree(Tree);
+        System.out.println();
+        // in-place sort
+        IPSort(Tree);
+        //print tree
+        System.out.println("In-Place Tree After Sorting");
+        printTree(Tree);
+        System.out.println("Loop Counter:"+ Tree.counter);
+        System.out.println();
+
+        // create new HeapTree class
+        HeapSort Tree2 = new HeapSort();
+        // start tree array
+        Tree2.Create("HeapSort");
+
+        // add to tree
+        Add(Tree2, 12);
+        Add(Tree2, 14);
+        Add(Tree2, 1);
+        Add(Tree2, 6);
+        Add(Tree2, 2);
+        Add(Tree2, 21);
+        Add(Tree2, 13);
+        Add(Tree2, 15);
+        Add(Tree2, 8);
+        Add(Tree2, 9);
+
+        //print Tree2
+        System.out.println("Selection Sort Tree Before Sorting");
+        printTree(Tree2);
+        System.out.println();
+        // Selection Sort
+        SelectionSort(Tree2);
+        //print Box
+        System.out.println("Selection Sort Tree After Sorting");
+        printTree(Tree2);
+        System.out.println("Loop Counter:"+ Tree2.counter);
+        System.out.println();
+    }
